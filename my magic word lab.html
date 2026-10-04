@@ -18,9 +18,22 @@
 
             <div class="card mb-4">
                 <div class="card-body">
-                    <h3 class="card-title"></h3>
+                    <h3 class="card-title">switch the type</h3>
+                    <button class="btn btn-warning" onclick="tostr()">turn into string</button>
+                    <button class="btn btn-warning" onclick="tonum()">turn into integer</button>
+                    <div id="convresult" class="box p-3 mt-3 rounded">type a number above then press a button!</div>
                 </div>
             </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title">find and swap a word</h3>
+                    <input id="findW" class="form-control mb-2" placeholder="word to find(try: dragon)">
+                    <input id="swapW" class="form-control mb-2" placeholder="swap it with(try: wizard)">
+                    <button class="btn btn-primary" onclick="dosearch()">find it</button>
+                    <button class="btn btn-primary" onclick="doreplace()">swap it</button>
+                    <div id="srresult" class="box p-3 mt-3 rounded">sentence: "the dragon flew over the big castle."</div>
+                    
         </div>
     </body>
 </html>
